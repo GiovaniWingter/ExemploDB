@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Novo Contato</title>
+    </h:head>
+    <h:body>
+        <h2>Cadastrado de Contato</h2>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Nome" />
+                <h:inputText value="#{contatoController.contato.nome}" />
+                <h:outputText value="E-mail" />
+                <h:inputText value="#{contatoController.contato.email}" />
+                <h:outputText value="Telefone" />
+                <h:inputText value="#{contatoController.contato.telefone}" />
+                <h:commandButton action="#{contatoController.inserir()}" value="Inserir" />
+                <h:commandButton action="listacontato" immediate="true" value="Cancelar" />
+            </h:panelGrid> 
+        </h:form> 
+    </h:body>
+</html>
+
